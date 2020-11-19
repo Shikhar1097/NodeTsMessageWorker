@@ -1,0 +1,74 @@
+{
+    "env": {
+      "browser": true,
+      "es6": true
+    },
+    "extends": ["airbnb-base"],
+    "globals": {
+      "Atomics": "readonly",
+      "SharedArrayBuffer": "readonly"
+    },
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+      "ecmaVersion": 2018,
+      "sourceType": "module"
+    },
+    "plugins": ["@typescript-eslint"],
+    "rules": {
+      "import/extensions": [
+        0,
+        "never",
+        {
+          "ignorePackages": true
+        }
+      ],
+      "spaced-comment": ["error", "always"],
+      "eqeqeq": [
+        "error",
+        "always",
+        {
+          "null": "ignore"
+        }
+      ],
+      "no-underscore-dangle": [
+        "error",
+        {
+          "allow": ["_id"]
+        }
+      ],
+      "camelcase": [
+        "error",
+        {
+          "allow": ["oauth2_v2", "user_id"],
+          "properties": "never"
+        }
+      ],
+      "func-names": ["error", "never"],
+      "semi": "error",
+      "no-var-requires": 0,
+      "no-extra-semi": 0,
+      "import/no-unresolved": "off",
+      "import/no-dynamic-require": "off",
+      "import/prefer-default-export": 0,
+      "no-unused-vars": "off",
+      "global-require": "off",
+      "no-plusplus": "off",
+      "dot-notation": "off",
+      "prefer-destructuring": "off",
+      "class-methods-use-this": "off",
+      "comma-dangle": [
+        "error",
+        {
+          "arrays": "never",
+          "objects": "never",
+          "imports": "never",
+          "exports": "never",
+          "functions": "ignore"
+        }
+      ],
+      "handle-callback-err": "error",
+      "quotes": ["error", "single"],
+      "import/no-extraneous-dependencies": ["error", { "devDependencies": true }]
+    }
+  }
+  
